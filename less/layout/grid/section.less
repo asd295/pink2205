@@ -1,0 +1,23 @@
+.section {
+	width: 100%;
+	min-width: 320px;
+	display: flex;
+	justify-content: center;
+
+
+	&__inner {
+		width: 320px;
+		/*margin-left: auto;*/
+		/*margin-right: auto;*/
+
+
+		@media @tablet {
+			width: 660px;
+		}
+
+
+		@media @desktop {
+			width: 960px;
+		}
+	}
+}

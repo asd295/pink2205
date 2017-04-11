@@ -1,0 +1,79 @@
+.photo-item {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	@media @desktop {
+		width: 300px;
+	}
+
+	&--top {
+		width: 100%;
+	}
+	
+}
+
+.photo-item--top::before {
+	content: "";
+	position: absolute;
+	width: 140px;
+	height: 36px;
+	top: 0;
+	right: 20px;
+	background: #d22856;
+	z-index: 1;
+}
+
+.photo-item--top::after {
+	content: "панорама дня";
+	position: absolute;
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #fff;
+	width: 140px;
+	height: 36px;
+	top: 5px;
+	right: 0;
+	z-index: 1;
+	text-transform: uppercase;
+}
+
+.photo-item__img {
+	&--top {
+		width: 100%;
+	}
+
+
+}
+
+.photo-item__description {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 18px;
+	font-size: 14px;
+	line-height: 24px;
+	background-color: #f2f2f2;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.photo-item__name {
+	font-size:14px;
+
+
+}
+
+.photo-item__time {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.photo-header {
+	display: flex;
+}
+
+.photo-item__text {
+	margin: -2px 0 7px;
+}
