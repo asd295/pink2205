@@ -759,6 +759,10 @@ th {
       justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 .photo-item {
   display: -ms-flexbox;
@@ -766,6 +770,7 @@ th {
   -ms-flex-direction: column;
       flex-direction: column;
   position: relative;
+  margin: 13px 0;
 }
 @media screen and (min-width: 990px) {
   .photo-item {
@@ -802,7 +807,11 @@ th {
 .photo-item__img--top {
   width: 100%;
 }
+.photo-item img {
+  vertical-align: bottom;
+}
 .photo-item__description {
+  width: 280px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
