@@ -41,15 +41,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="section  photo-day-section">
-				<div class="section__inner  photo-day-section__inner">
+			<div class="photo-day-section">
+				<div class="photo-day-section__inner">
 					<article class="photo-item  photo-item--top">
-						<picture class="photo-item__img  photo-item__img--top">
+						<picture>
 							<source media="(min-width: 990px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
 							<source media="(min-width: 690px)" srcset="img/panorama-tablet@1x.jpg">
-							<img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@1x.jpg 1x, img/panorama-mobile@2x.jpg 2x" alt="photo">
+							<img class="photo-item__img--top" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@1x.jpg 1x, img/panorama-mobile@2x.jpg 2x" alt="photo">
 						</picture> 
-						<div class="photo-item__description">
+					</article>
+						<div class="section__inner photo-item__description">
 							<div class="photo-header">
 								<div class="photo-item__name"><b>Анна </b></div>
 								<div class="photo-item__time">(5 минут назад)</div>
@@ -62,7 +63,7 @@
 								</div>
 							</div>
 						</div>
-					</article>
+					
 				</div>
 			</div>
 
