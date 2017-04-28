@@ -825,6 +825,7 @@ th {
 }
 .photo-item__name {
   font-size: 14px;
+  margin-right: 5px;
 }
 .photo-item__time {
   font-size: 12px;
@@ -842,6 +843,20 @@ th {
   background-color: #fff;
 }
 .photo-day-section__inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  position: relative;
+}
+.photo-upload {
+  background: #f2f2f2;
+  padding: 20px 0 30px 0;
+  margin: 0 auto;
+}
+.photo-upload__inner {
+  -ms-flex-align: center;
+      align-items: center;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
