@@ -20,4 +20,27 @@
 			width: 960px;
 		}
 	}
+	&__hex {
+		background-color: #1d2631;
+	}
+
+
+	&__hex1{
+		background-color: #f2f2f2;
+		margin-top: 70px;
+		position: relative;
+	}
+}
+
+
+.section__hex1::after {
+	content: "";
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  background: #f2f2f2;
+  z-index: -1;
+  transform: skewY(-6deg);
 }

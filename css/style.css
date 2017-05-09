@@ -374,24 +374,6 @@ th {
   padding: 0;
 }
 /* grid*/
-.page {
-  background: transparent url(../img/bg-back-mobile@1x.jpg) top center no-repeat;
-}
-@media screen and (min-width: 690px) {
-  .page {
-    background-image: url(../img/bg-back-tablet@1x.jpg);
-  }
-}
-@media screen and (min-width: 990px) {
-  .page {
-    background-image: url(../img/bg-back-desktop@1x.jpg);
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .page {
-    background: transparent url(../img/bg-back-desktop@2x.jpg) top center no-repeat;
-  }
-}
 .section {
   width: 100%;
   min-width: 320px;
@@ -414,6 +396,25 @@ th {
   .section__inner {
     width: 960px;
   }
+}
+.section__hex {
+  background-color: #1d2631;
+}
+.section__hex1 {
+  background-color: #f2f2f2;
+  margin-top: 70px;
+  position: relative;
+}
+.section__hex1::after {
+  content: "";
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  background: #f2f2f2;
+  z-index: -1;
+  transform: skewY(-6deg);
 }
 /* header*/
 .main-nav {
@@ -594,6 +595,33 @@ th {
 @media screen and (min-width: 990px) {
   .page-title__heading {
     padding: 100px 300px 100px 300px;
+  }
+}
+.page-title--index {
+  padding-left: 120px;
+  padding-bottom: 110px;
+  left: 0;
+  width: 258px;
+  height: 286px;
+  background: url(../img/iphone-hand-mobile@1x.png) left bottom no-repeat;
+  z-index: 1;
+}
+.page-title-section {
+  background: transparent url(../img/bg-back-mobile@1x.jpg) center -65px no-repeat;
+}
+@media screen and (min-width: 690px) {
+  .page-title-section {
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+  }
+}
+@media screen and (min-width: 990px) {
+  .page-title-section {
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-title-section .page {
+    background: transparent url(../img/bg-back-desktop@2x.jpg) top center no-repeat;
   }
 }
 .page-prolog-section {
@@ -792,6 +820,31 @@ th {
 .form-modal--false {
   height: 290px;
   margin-top: -145px;
+}
+.btn--download {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 28px 20px;
+  padding: 15px 35px;
+  border: 3px solid #fff;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 18px;
+}
+.platform--apple {
+  margin-left: 57px;
+  margin-right: 31px;
+}
+.platform--android {
+  margin-right: 31px;
+}
+.platform--windows {
+  margin-right: 31px;
 }
 /*PAGES*/
 /*photo*/
@@ -1006,4 +1059,48 @@ th {
   font-size: 18px;
   line-height: 18px;
   background: transparent;
+}
+/*index*/
+.download-app__info {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  margin-top: 20px;
+  text-align: center;
+}
+.features__heading {
+  font-size: 24px;
+  line-height: 26px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  margin: 40px 0 0;
+  text-align: center;
+  color: #283645;
+  background: #fff;
+}
+.features-item__title {
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+  text-align: center;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+.features-item__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #283645;
+  text-align: center;
+  margin: 0;
+  padding: 0 20px;
+}
+.features-item__picture {
+  display: block;
+  margin: 40px auto 0;
 }

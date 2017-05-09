@@ -25,24 +25,32 @@
 			</div>
 		</header>
 		<main class="page__content">
+			<div class="section page-title-section">
 			<div class="section">
-				<div class="section__inner">
-					<section class="page-title page-title--index">
-						<div class="page-title__wrapper page-title__wrapper--index">
-						</div>
-					</section>
+			<section class="page-title page-title--index">
+					<div class="page-title__wrapper page-title__wrapper--index">
+					</div>
+				</section>
+				</div>
+			</div>
+			<div class="section section__hex">
+			<div class="section__inner">
+					
 					<section class="download-app">
 						<div class="download-app__wrapper">
 							<a class="btn btn--download" href="#">Скачать приложение</a>
 							<div class="download-app__platforms">
-								<a class="platform platform--apple" href="#"></a>
-								<a class="platform platform--android" href="#"></a>
-								<a class="platform platform--windows" href="#"></a>
+								<a class="platform platform--apple" href="#"><img src="img/logo-apple.svg" width="47" height="57" alt=""></a>
+								<a class="platform platform--android" href="#"><img src="img/logo-android.svg" width="43" height="48" alt=""></a>
+								<a class="platform platform--windows" href="#"><img src="img/logo-microsoft.svg" width="44" height="42" alt=""></a>
 							</div>
-							<p class="download-app__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+							<p class="download-app__info">Доступно для iPhone, iPad, Android, <br> Windows Phone, OS X, Windows 8</p>
 						</div>
 					</section>
 				</div>
+				
+			
+				
 			</div>
 			<div class="section">
 				<div class="section__inner">
@@ -56,7 +64,7 @@
 					</section>
 				</div>
 			</div>
-			<div class="section">
+			<div class="section section__hex1">
 				<div class="section__inner">
 					<section class="features-items">
 						<div class="features-items__wrapper">
@@ -69,11 +77,12 @@
 								<p class="features-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
 							</div>
 							<div class="features-item">
-								<div class="features-item__picture">
-								<img src="<img src="http://placehold.it/150x100" width="150" height="100" alt="телефон мобильный">
-								</div>
 								<h2 class="features-item__title">Заводит новых друзей</h2>
 								<p class="features-item__text">Ставьте лайки,комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+								<picture>
+									<source media="(min-width: 320px)" srcset="img/iphone-screen-mobile@1x.png 1x, img/iphone-screen-mobile@2x.png 2x">
+									<img class="features-item__picture" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt=""> 
+								</picture>
 							</div>
 						</div>
 					</section>
