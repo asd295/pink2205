@@ -397,15 +397,15 @@ th {
     width: 960px;
   }
 }
-.section__hex {
+.section__darkblue {
   background-color: #1d2631;
 }
-.section__hex1 {
+.section__grey {
   background-color: #f2f2f2;
   margin-top: 70px;
   position: relative;
 }
-.section__hex1::after {
+.section__grey::after {
   content: "";
   top: -20px;
   left: 0;
@@ -644,6 +644,23 @@ th {
     font-size: 18px;
     line-height: 30px;
   }
+}
+.reviews {
+  position: relative;
+}
+.reviews:before {
+  background: #fff;
+  top: -40px;
+  width: 320px;
+  height: 40px;
+  z-index: 1;
+  content: "";
+  left: 0;
+  position: absolute;
+}
+.reviews__wrapper li:nth-child(2),
+.reviews__wrapper li:nth-child(3) {
+  display: none;
 }
 /* uikit */
 .likes__button {
