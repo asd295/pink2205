@@ -25,9 +25,14 @@
 	}
 
 
-	&__grey{
+	&__grey {
 		background-color: #f2f2f2;
 		margin-top: 70px;
+		position: relative;
+	}
+
+
+	&__review {
 		position: relative;
 	}
 }
@@ -35,13 +40,31 @@
 
 
 .section__grey::after {
-	content: "";
-  top: -20px;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  position: absolute;
-  background: #f2f2f2;
-  z-index: -1;
-  transform: skewY(-6deg);
+		content: "";
+		top: -20px;
+		left: 0;
+		width: 100%;
+		height: 50%;
+		position: absolute;
+		background: #f2f2f2;
+		z-index: -1;
+		transform: skewY(-6deg);
+}
+
+
+
+.section__review::before {
+		content: "";
+		background:#fff;
+		position: absolute;
+		top: -40px;
+		width: 420px;
+		height: 40px;
+		z-index: 1;
+		left: 0;
+		}
+
+
+.section__inner--wrapp {
+	width: 380px;
 }

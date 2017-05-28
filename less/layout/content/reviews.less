@@ -1,19 +1,9 @@
 .reviews {
 
 
-	position: relative;
-
- 
-
-	&:before {
-		background:#fff;
-		top: -40px;
-		width: 320px;
-		height: 40px;
-		z-index: 1;
-		content: "";
-		left: 0;
-		position: absolute;
+	&__items {
+		padding: 0;
+		position: relative;
 	}
 
 
@@ -21,8 +11,34 @@
 	&__wrapper li:nth-child(3) {
 		display: none;
 	}
-
 }
 
 
+.areviews {
 
+
+	&__item-title {
+		text-align: center;
+		font-size: 18px;
+		line-height: 30px;
+		font-family: "Open Sans", "Arial", sans-serif;
+		font-weight: 700;
+		letter-spacing: 0.5px;
+		margin-top: 0;
+		}
+
+
+	&__item-text {
+		text-align: center;
+		font-size: 14px;
+		line-height: 30px;
+		margin-bottom: 0;
+		color: #283645;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+.reviews li {
+	list-style-type: none;
+}
