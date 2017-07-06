@@ -387,6 +387,9 @@ th {
   /*margin-left: auto;*/
   /*margin-right: auto;*/
 }
+.section__inner--hidden-table {
+  overflow: hidden;
+}
 @media screen and (min-width: 690px) {
   .section__inner {
     width: 660px;
@@ -404,7 +407,6 @@ th {
   background-color: #f2f2f2;
   margin-top: 70px;
   position: relative;
-  overflow-x: hidden;
 }
 .section__review {
   position: relative;
