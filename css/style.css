@@ -388,7 +388,7 @@ th {
   /*margin-right: auto;*/
 }
 .section__inner--hidden-table {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 @media screen and (min-width: 690px) {
   .section__inner {
