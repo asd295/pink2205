@@ -1,17 +1,19 @@
 .form-section {
-	padding-top: 35px;
 	border: 0;
 	background-color: #fff;
+	position: relative;
+	margin-top: 30px;
 
 
 	&--gray {
 		background-color: #f2f2f2;
 	}
 
-
 	&__title {
 		display: block;
-
+		margin-bottom: 10px;
+		padding-left: 25px;
+		padding-right: 25px;
 		font-weight: 400;
 		text-transform: uppercase;
 		text-align: center;
@@ -20,3 +22,15 @@
 		color: #d22856;
 	}
 }
+.form-section--gray:before {
+	content: "";
+	position: absolute;
+	width: 316px;
+	height: 70px;
+	top: -38px;
+	left: 0;
+	background: #f2f2f2;
+	z-index: -1;
+}
+
+
