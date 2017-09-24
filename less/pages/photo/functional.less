@@ -21,7 +21,7 @@
 
 
 	&__tool2 {
-		background: url(../img/icon-editor-fill.svg) no-repeat;
+		background: url(../img/icon-editor-fill-disabled.svg) no-repeat;
 		border: none;
 		width: 48px;
 		height: 48px;
@@ -31,7 +31,7 @@
 
 
 	&__tool3 {
-		background: url(../img/icon-editor-contrast.svg) no-repeat;
+		background: url(../img/icon-editor-contrast-hover.svg) no-repeat;
 		border: none;
 		width: 48px;
 		height: 40px;
@@ -44,12 +44,13 @@
 
 	&__toolcontrols {
 		margin: 30px 40px 33px 40px;
+		position: relative;
 	}
 
 	&__toolscale {
 		width: 240px;
 		height: 2px;
-		background: #283645;
+		background: @link-bg;
 	}
 
 
@@ -61,6 +62,8 @@
 		border: 2px solid #d22856;
 		border-radius: 50%;
 		background: #fff;
+		top: -6px;
+		right: 33px;
 			&:hover {
 				background: #d22856;
 		}
@@ -77,7 +80,7 @@
 
 
 	&__post-btn {
-		font-weight: 700;
+		font-weight: @bold;
 		text-decoration: none;
 		margin-top: 38px;
 		margin-left: 20px;
@@ -95,7 +98,7 @@
 
 	&__cencel-btn {
 		cursor: pointer;
-		font-weight: 700;
+		font-weight: @bold;
 		text-decoration: none;
 		margin-top: 12px;
 		margin-left: 20px;

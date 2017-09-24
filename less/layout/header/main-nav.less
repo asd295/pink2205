@@ -1,5 +1,5 @@
 .main-nav {
-	background-color: #283645;
+	background-color: @link-bg;
 	margin: 0 auto;
 
 
@@ -7,7 +7,7 @@
 		list-style: none;
 		padding: 0;
 		margin: 0;
-		display: inline;
+		
 	}
 
 
@@ -26,10 +26,11 @@
 		font-family: "Open Sans";
 		font-size: 18px;
 		line-height: 32px;
-		font-weight: 700;
+		font-weight: @bold;
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
+
 
 
 	&__burger {
@@ -50,7 +51,43 @@
 				background-image: url(../img/icon-menu-cross.svg);
 		}
 	}
+	&__wrapper {
+		width: auto;
+	}
 }
+
+.main-nav--closed {
+	border-bottom: none; 
+
+}
+.main-nav--closed .main-nav__burger {
+  background-image: url("../img/icon-menu-burger.svg");
+  right: 15px;
+
+  &:hover {
+    background-image: url("../img/icon-menu-burger-hover.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav--opened .main-nav__burger {
+  background-image: url("../img/icon-menu-cross.svg");
+
+  &:hover {
+    background-image: url("../img/icon-menu-cross-hover.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+
+
 
 
 

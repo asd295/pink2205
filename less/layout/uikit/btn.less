@@ -1,7 +1,7 @@
 .btn {
 
-	font-family: "Open Sans","Arial",sans-serif;
-	font-weight: 700;
+	font-family: @font-regular,sans-serif;
+	font-weight: @bold;
 
 
 	&--download {
@@ -16,6 +16,16 @@
 		color: #fff;
 		font-size: 18px;
 		line-height: 18px;
+			
+			&:hover {
+				background: #ffffff;
+				color: #d22856;
+			}
+
+			&:active {
+				background-color: #ffffff;
+				color: #eea5b9;
+			}
 	}
 
 
