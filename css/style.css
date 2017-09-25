@@ -1507,11 +1507,11 @@ th {
     display: none;
   }
 }
-.features-item__picture-tablet {
+.features-item__picture--tablet {
   display: none;
 }
 @media screen and (min-width: 690px) {
-  .features-item__picture-tablet {
+  .features-item__picture--tablet {
     display: block;
     top: -62px;
     left: 20px;
