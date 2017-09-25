@@ -5,20 +5,22 @@
 	<meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
 	<title>Pink</title>
 	<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 	<div class="page">
 		<header class="page__header">
 			<div class="section  header-section">
 				<div class="section__inner  header-section__inner">
-					<a class="header-logo" href="#">Pink</a>
+					<a class="header-logo" href="index.html">Pink</a>
 					<nav class="main-nav">
 						<div class="main-nav__burger  main-nav__burger--cross"></div>
 						<ul class="main-nav__list">
 							<li class="main-nav__item"><a class="main-nav__link  main-nav__link--active" href="index.html">Главная</a></li>
 							<li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
 							<li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-							<li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
+							<li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -35,9 +37,9 @@
 			</div>
 			<div class="section section__darkblue">
 			<div class="section__inner">
-					
 					<section class="download-app">
 						<div class="download-app__wrapper">
+							<p class="download-app__text">Взгляните на жизнь иначе !</p>
 							<a class="btn btn--download" href="#">Скачать приложение</a>
 							<div class="download-app__platforms">
 								<a class="platform platform--apple" href="#"><img src="img/logo-apple.svg" width="47" height="57" alt=""></a>
@@ -55,7 +57,7 @@
 						<div class="features__title">
 							<div class="wrapper">
 								<h1 class="features__heading">Устали от серости мегаполиса?</h1>
-								<h1 class="features__heading">Нам есть, что вам предложить!</h1>
+								<h1 class="features__heading text-padding">Нам есть, что вам предложить!</h1>
 							</div>
 						</div>
 					</section>
@@ -79,6 +81,8 @@
 								<picture>
 									<source media="(min-width: 320px)" srcset="img/iphone-screen-mobile@1x.png 1x, img/iphone-screen-mobile@2x.png 2x">
 									<img class="features-item__picture" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt=""> 
+									<source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+									<img class="features-item__picture-tablet" src="img/iphone-screen-3-tablet@1x.png" srcset="img/iphone-screen-3-tablet@2x.png 2x" alt=""> 
 								</picture>
 							</div>
 						</div>
@@ -187,5 +191,6 @@
 			</div>
 		</footer>
 	</div>
+		<script src="js/pink.js"</script>
 </body>
 </html>

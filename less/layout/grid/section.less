@@ -21,7 +21,7 @@
 		}
 	}
 	&__darkblue {
-		background-color: #1d2631;
+		background-color: @controls-bg;
 	}
 
 
@@ -49,6 +49,18 @@
 		background: @description-bg;
 		z-index: -1;
 		transform: skewY(-6deg);
+
+			@media @tablet {
+				content: "";
+		top: -40px;
+		left: 0;
+		width: 100%;
+		height: 50%;
+		position: absolute;
+		background: @description-bg;
+		z-index: -1;
+		transform: skewY(-5deg);
+			}
 }
 
 
@@ -62,9 +74,29 @@
 		height: 40px;
 		z-index: 1;
 		left: 0;
+
+			@media @tablet {
+				display: none;
+			}
 		}
 
 
 .section__inner--wrapp {
 	width: 380px;
+}
+
+
+.section__darkblue {
+
+	@media @tablet {
+		position: absolute;
+		top: 500px;
+		background-color: rgba(0, 0, 0, 0);
+		margin: 0 auto;
+		z-index: 1;
+		
+		}
+	@media @desktop {
+		display: none;
+	}
 }

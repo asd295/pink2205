@@ -23,11 +23,24 @@
 	&--index {
 		padding-left: 120px;
 		padding-bottom: 110px;
+
 		left: 0;
 		width: 258px;
 		height: 286px;
 		background: url(../img/iphone-hand-mobile@1x.png) left bottom no-repeat;
 		z-index: 1;
+
+
+			@media @tablet {
+						background: url(../img/iphone-hand-tablet@1x.png) center no-repeat;
+						margin: 0 auto;
+    margin-top: 65px;
+    width: 600px;
+    min-height: 545px;
+
+						
+			
+		}
 	}
 }
 
@@ -37,7 +50,9 @@
 	background: transparent url(../img/bg-back-mobile@1x.jpg) center -65px no-repeat;
 
 		@media @tablet {
-		background-image: url(../img/bg-back-tablet@1x.jpg);
+		background: transparent url(../img/bg-back-tablet@1x.jpg) center -65px no-repeat;
+    background-size: 1200px 729px;
+
 	}
 
 
