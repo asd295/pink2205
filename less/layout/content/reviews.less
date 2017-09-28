@@ -1,9 +1,12 @@
 .reviews {
-
+	position: relative;
 
 	&__items {
 		padding: 0;
 		position: relative;
+
+
+			
 	}
 
 
@@ -25,6 +28,14 @@
 		font-weight: @bold;
 		letter-spacing: 0.5px;
 		margin-top: 0;
+
+
+			@media @tablet {
+				    margin-top: 35px;
+    font-size: 21px;
+    margin-bottom: 0;
+
+			}
 		}
 
 
@@ -36,9 +47,34 @@
 		color: @link-bg;
 		padding-left: 20px;
 		padding-right: 20px;
+
+
+			@media @tablet {
+				font-size: 18px;
+    line-height: 30px;
+			}
 	}
 }
 
 .reviews li {
 	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+}
+
+.review__item-title--order2 {
+
+
+	@media @tablet {
+		order: 2;
+
+	}
+}
+
+.review__profession--order3 {
+	@media @tablet {
+		order: 3;
+		text-align: center;
+	}
+
 }

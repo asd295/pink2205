@@ -57,8 +57,7 @@
 
 	&--mobile {
 
-overflow: hidden;
-    position: relative;
+
 
     &:before {
     	content: "";
@@ -84,6 +83,35 @@ overflow: hidden;
 	}
 }
 
+@media @mobile {
 
+.sliders__inputs--mobile {
+		
+overflow: hidden;
+    position: relative;
+}
+}
+
+@media @tablet {
+
+	.table__price {
+    position: static;
+}
+
+	.sliders__inputs--mobile:before {
+		display: none;
+	}
+	.sliders__inputs--mobile {
+		position: relative;
+		display: block;
+	}
+
+	.table__price--second-item {
+		left: 0px;
+
+
+	}
+
+}
 
 
