@@ -4,10 +4,8 @@
 	&__items {
 		padding: 0;
 		position: relative;
-
-
-			
 	}
+
 
 
 	&__wrapper li:nth-child(2),
@@ -15,6 +13,8 @@
 		display: none;
 	}
 }
+
+
 
 
 .areviews {
@@ -72,7 +72,11 @@
 }
 
 .review__profession--order3 {
+
+	display: none;
+
 	@media @tablet {
+		display: block;
 		order: 3;
 		text-align: center;
 	}

@@ -1,18 +1,86 @@
 .photo-item {
+
 	display: flex;
 	flex-direction: column;
-	position: relative;
 	margin: 13px 0;
 
-	@media @desktop {
-		width: 300px;
+
+		@media @desktop {
+			width: 300px;
+		}
+
+
+			&--top {
+				width: 100%;
+			}
+
+
+			&__text {
+				margin: -2px 0 7px;
+
+
+				@media @tablet {
+					
+					margin: -2px 0 7px 10px;
+				}
+			}
+
+
+	&__description {
+		width: 280px;
+		display: flex;
+		flex-direction: column;
+		padding: 20px 18px;
+		font-size: 14px;
+		line-height: 24px;
+		background-color: @description-bg;
+		box-sizing: border-box;
+		margin: 0 auto;
+
+			@media @tablet {
+				width: 300px;
+				min-height: 160px;
+			}
 	}
 
-	&--top {
-		width: 100%;
+
+	&__description-popular {
+
+		display: flex;
+		flex-direction: column;
+		padding: 20px 18px;
+		font-size: 14px;
+		line-height: 24px;
+		background-color: @description-bg;
+		box-sizing: border-box;
+		margin: 0 auto;
+
+			@media @tablet {
+				width: auto;
+			}
 	}
-	
+
+
+	&__text-popular {
+		margin: -2px 0 7px;
+
+
+			@media @tablet {
+				width: 590px;
+					margin: -2px 0 7px 10px;
+
+			}
+	}
+
+
+	&__post {
+
+			@media @tablet {
+
+			}
+	}
 }
+
 
 .photo-item--top::before {
 	content: "";
@@ -23,6 +91,12 @@
 	right: 20px;
 	background: #d22856;
 	z-index: 1;
+
+
+		@media @tablet {
+			top: 55px;
+			right: 19px;
+		}
 }
 
 .photo-item--top::after {
@@ -38,35 +112,30 @@
 	right: 0;
 	z-index: 1;
 	text-transform: uppercase;
+
+
+		@media @tablet {
+			top: 53px;
+			padding-top:8px;
+		}
 }
 
 
 
 .photo-item__img {
 
-
 	&--top {
 		width: 100%;
 	}
-
-
 }
+
 
 .photo-item img {
 	vertical-align: bottom;
 }
 
-.photo-item__description {
-	width: 280px;
-	display: flex;
-	flex-direction: column;
-	padding: 20px 18px;
-	font-size: 14px;
-	line-height: 24px;
-	background-color: @description-bg;
-	box-sizing: border-box;
-	margin: 0 auto;
-}
+
+
 
 .photo-item__name {
 	font-size:14px;
@@ -83,8 +152,10 @@
 
 .photo-header {
 	display: flex;
+
+
+		@media @tablet {
+			margin-left: 10px;
+		}
 }
 
-.photo-item__text {
-	margin: -2px 0 7px;
-}

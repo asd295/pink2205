@@ -19,7 +19,7 @@
 							<li class="main-nav__item"><a class="main-nav__link  main-nav__link--active" href="index.html">Главная</a></li>
 							<li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
 							<li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-							<li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+							<li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTMLAcademy</a>
 							</li>
 						</ul>
 					</nav>
@@ -119,12 +119,13 @@
 						<h2 class="reviews__item-title">Николай Иванов</h2>
 						<p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные cерые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
 						</li>
+						</ul>
 						<div class="sliders__inputs">
 							<input class="slider__input" type="radio" name="advantages" id="btn-carousel-1" checked>
 							<input class="slider__input" type="radio" name="advantages" id="btn-carousel-2">
 							<input class="slider__input" type="radio" name="advantages" id="btn-carousel-3">
 						</div>
-						<div class="advantages__toggles  slider__toggles">
+						<div class="advantages__toggles  slider__toggles slider__toggles--control">
 							<label class="slider__label slider-label--activ" for="btn-carousel-1"></label>
 							<label class="slider__label" for="btn-carousel-2"></label>
 							<label class="slider__label" for="btn-carousel-3"></label>
@@ -133,7 +134,7 @@
 					</section>
 				</div>
 			</div>
-		<div class="section section__grey">
+			<div class="section section__grey">
 				<div class="section__inner">
 					<section class="table">
 						<div class="sliders__inputs sliders__inputs--mobile">
@@ -171,7 +172,6 @@
 							<label class="slider__label slider-label--activ" for="btn-preice-2"></label>
 							<label class="slider__label" for="btn-preice-3"></label>
 						</div>
-
 						</div>
 					</section>
 				</div>
@@ -181,29 +181,49 @@
 			<div class="section  footer-contacts-section  footer-contacts-section--gradient">
 				<div class="section__inner  footer-contacts-section__inner">
 					<h2 class="index-footer__heading ">Остались вопросы? Свяжитесь с нами!</h2>
-					<div class="index-footer__item-title">Звоните:
-					</div>
-					<div class="index-footer__item">+7 (812) 555-66-66
-					</div>
-					<div class="index-footer__item-title">Пишите:
-					</div>
-					<div class="index-footer__item">mail@htmlacademy.ru
-					</div>
-					<div class="index-footer__item-title">Приезжайте в гости:
-					</div>
-					<div class="index-footer__item">ул. Большая<br>Конюшенная, 19/8
-					</div>
+					<article class="index-footer__contact">
+						<div class="index-footer__item-title">Звоните:
+						</div>
+						<div class="index-footer__item">+7 (812) 555-66-66
+						</div>
+					</article>
+					<article class="index-footer__contact index-footer__contact--order">
+						<div class="index-footer__item-title">Пишите:
+						</div>
+						<div class="index-footer__item">mail@htmlacademy.ru
+						</div>
+					</article>
+					<article class="index-footer__contact index-footer__contact--triangle">
+						<div class="index-footer__item-title">Приезжайте в гости:
+						</div>
+						<div class="index-footer__item">ул. Большая<br>Конюшенная, 19/8
+						</div>
+					</article>
 				</div>
 			</div>
 			<div class="section  footer-map-section">
-				<picture>
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A66ead49df992cffb2afa5cf42880d2444ae052ba36692d593bcd83022fd74435&amp;lang=ru_RU&amp;scroll=true"></script>
+				<!--<picture>
 					<source media="(min-width: 990px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
 					<source media="(min-width: 690px)" srcset="img/bg-map-tablet@1x.png">
 					<img class="footer-maps" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@1x.png 1x, img/bg-map -mobile@2x.png 2x" alt="карта">
-				</picture>
+				</picture>-->
+			</div>
+			<div class="section  footer-section">
+				<div class="section__inner  footer-section__inner footer-section__inner--index">
+					<a href="index.html" class="footer-logo">Pink</a>
+
+					<div class="footer-social">
+						<a href="#" class="social-link  social-link--tw">Мы в твиттере</a>
+						<a href="#" class="social-link  social-link--fb">Мы на фейсбуке</a>
+						<a href="#" class="social-link  social-link--yt">Ютюб канал</a>
+					</div>
+
+					<a href="http://htmlacademy.ru" class="footer-copyright">Разработано</a>
+				</div>
 			</div>
 		</footer>
 	</div>
-		<script src="js/pink.js"</script>
+		<script src="js/pink.js"></script>
 </body>
 </html>
