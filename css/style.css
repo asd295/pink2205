@@ -996,7 +996,6 @@ th {
 }
 @media screen and (min-width: 690px) {
   .likes__button {
-    margin-right: 40px;
     margin-top: 5px;
   }
 }
@@ -1004,12 +1003,27 @@ th {
   color: #d22856;
 }
 .likes__button--popular {
-  margin-right: 7px;
+  margin-right: 17px;
+  color: #d22856;
+}
+.likes__button--scores-popular {
+  margin-left: 25px;
   color: #d22856;
 }
 .likes__scores {
   font-size: 12px;
   text-transform: uppercase;
+}
+@media screen and (min-width: 690px) {
+  .likes__post {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin-left: 10px;
+  }
 }
 .form-section {
   border: 0;
@@ -1357,6 +1371,11 @@ th {
 .photo-list-section {
   background-color: #fff;
 }
+@media screen and (min-width: 690px) {
+  .photo-list-section {
+    margin-top: 25px;
+  }
+}
 .photo-list-section__inner {
   display: -ms-flexbox;
   display: flex;
@@ -1395,6 +1414,7 @@ th {
 }
 @media screen and (min-width: 690px) {
   .photo-item__text {
+    min-height: 70px;
     margin: -2px 0 7px 10px;
   }
 }
@@ -1431,7 +1451,7 @@ th {
 }
 @media screen and (min-width: 690px) {
   .photo-item__description-popular {
-    width: auto;
+    width: 660px;
   }
 }
 .photo-item__text-popular {

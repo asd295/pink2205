@@ -29,7 +29,6 @@
 
 
 					@media @tablet {
-						margin-right: 40px;
 						margin-top: 5px;
 					}
 
@@ -38,7 +37,13 @@
 				}
 
 				&--popular {
-					margin-right: 7px;
+					margin-right: 17px;
+					color: @font-red;
+				}
+
+
+				&--scores-popular {
+					margin-left: 25px;
 					color: @font-red;
 				}
 		}
@@ -48,6 +53,19 @@
 			font-size: 12px;
 			text-transform: uppercase;
 		}
+
+
+		&__post {
+
+
+				@media @tablet {
+					display: flex;
+					flex-direction: row-reverse;
+					justify-content: space-between;
+					margin-left: 10px;
+				}
+		}
+
 }
 
 
