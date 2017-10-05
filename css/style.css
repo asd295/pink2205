@@ -1401,6 +1401,11 @@ th {
       flex-direction: column;
   margin: 13px 0;
 }
+@media screen and (min-width: 690px) {
+  .photo-item {
+    padding: 0 15px;
+  }
+}
 @media screen and (min-width: 990px) {
   .photo-item {
     width: 300px;
@@ -1547,6 +1552,14 @@ th {
       flex-direction: column;
   position: relative;
 }
+@media screen and (min-width: 690px) {
+  .photo-upload__inner {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .functional__tool-list {
   display: -ms-flexbox;
   display: flex;
@@ -1558,12 +1571,25 @@ th {
   margin-right: 34px;
   padding-top: 42px;
 }
+@media screen and (min-width: 690px) {
+  .functional__tool-list {
+    display: none;
+  }
+}
 .functional__tool1 {
   background: url(../img/icon-editor-crop.svg) no-repeat;
   border: none;
   width: 48px;
   height: 48px;
   cursor: pointer;
+}
+@media screen and (min-width: 690px) {
+  .functional__tool1 {
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    margin-top: 27px;
+  }
 }
 .functional__tool2 {
   background: url(../img/icon-editor-fill-disabled.svg) no-repeat;
@@ -1588,6 +1614,30 @@ th {
 .functional__toolcontrols {
   margin: 30px 40px 33px 40px;
   position: relative;
+}
+@media screen and (min-width: 690px) {
+  .functional__toolcontrols {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+.functional__toolcontrols--2 {
+  display: none;
+}
+@media screen and (min-width: 690px) {
+  .functional__toolcontrols--2 {
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.functional__toolcontrols--3 {
+  display: none;
+}
+@media screen and (min-width: 690px) {
+  .functional__toolcontrols--3 {
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .functional__toolscale {
   width: 240px;
@@ -1650,7 +1700,6 @@ th {
 }
 @media screen and (min-width: 690px) {
   .prolog-photo {
-    padding-top: 50px;
     margin-bottom: 50px;
     padding-left: 35px;
     padding-right: 35px;
