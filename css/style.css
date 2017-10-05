@@ -1586,9 +1586,8 @@ th {
 @media screen and (min-width: 690px) {
   .functional__tool1 {
     margin: 0;
-    width: 24px;
-    height: 24px;
     margin-top: 27px;
+    background-size: 24px 26px;
   }
 }
 .functional__tool2 {
@@ -1598,6 +1597,14 @@ th {
   height: 48px;
   cursor: pointer;
   margin-left: 55px;
+}
+@media screen and (min-width: 690px) {
+  .functional__tool2 {
+    background: url(../img/icon-editor-fill-active.svg) no-repeat;
+    margin: 0;
+    margin-top: 27px;
+    background-size: 24px 26px;
+  }
 }
 .functional__tool3 {
   background: url(../img/icon-editor-contrast-hover.svg) no-repeat;
@@ -1610,6 +1617,16 @@ th {
   display: -ms-flexbox;
   display: flex;
   margin-left: 55px;
+}
+@media screen and (min-width: 690px) {
+  .functional__tool3 {
+    margin: 0;
+    margin-top: 27px;
+    background-size: 24px 26px;
+    background: url(../img/icon-editor-contrast-active.svg) no-repeat;
+    width: 23px;
+    height: 42px;
+  }
 }
 .functional__toolcontrols {
   margin: 30px 40px 33px 40px;
