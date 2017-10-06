@@ -198,10 +198,14 @@
 			</div>
 			<div class="section photo-upload">
 				<div class="section__inner photo-upload__inner">
+					<div class="functional-photo">
 					<picture>
+						<source media="(min-width: 990px)" srcset="img/photo-7-desktop@1x.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+						<source media="(min-width: 690px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
 						<img src="img/photo-7-mobile@1x.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Фото пользователя">
 					</picture>
-						<div class="functional">
+					</div>
+						<div class="functional-blok">
 						<ul class="functional__tool-list">
 							<li class="functional__tool-item">
 								<button class="functional__tool1 functional__tool1--activ" type="button"></button>
@@ -221,20 +225,20 @@
 							
 						</div>
 						<div class="functional__toolcontrols functional__toolcontrols--2">
+							<button class="functional__tool2" type="button"></button>
 							<div class="functional__toolscale"></div>
 							<div class="functional__tooltoggle"></div>
-							<button class="functional__tool2" type="button"></button>
 						</div>
 						<div class="functional__toolcontrols functional__toolcontrols--3">
+							<button class="functional__tool3" type="button"></button>
 							<div class="functional__toolscale"></div>
 							<div class="functional__tooltoggle"></div>
-							<button class="functional__tool3" type="button"></button>
 						</div>
 					</div>
 					<div class="functional__btn-upload">
 						<button class="functional__post-btn" type="submit" title="Запостить"> Запостить</button>
 						<button class="functional__cencel-btn" type="submit" title="Отмена">Отмена</button>
-					</div>-->
+					</div>
 				
 				</div>
 			</div>

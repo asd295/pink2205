@@ -1401,11 +1401,6 @@ th {
       flex-direction: column;
   margin: 13px 0;
 }
-@media screen and (min-width: 690px) {
-  .photo-item {
-    padding: 0 15px;
-  }
-}
 @media screen and (min-width: 990px) {
   .photo-item {
     width: 300px;
