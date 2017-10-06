@@ -1581,8 +1581,9 @@ th {
 @media screen and (min-width: 690px) {
   .functional__tool1 {
     margin: 0;
-    margin-top: 27px;
     background-size: 24px 26px;
+    position: absolute;
+    margin-top: -10px;
   }
 }
 .functional__tool2 {
@@ -1599,6 +1600,8 @@ th {
     margin: 0;
     margin-top: 27px;
     background-size: 24px 26px;
+    position: absolute;
+    margin-top: -10px;
   }
 }
 .functional__tool3 {
@@ -1621,6 +1624,8 @@ th {
     background: url(../img/icon-editor-contrast-active.svg) no-repeat;
     width: 17px;
     height: 17px;
+    position: absolute;
+    margin-top: -10px;
   }
 }
 .functional__toolcontrols {
@@ -1658,6 +1663,12 @@ th {
   width: 240px;
   height: 2px;
   background: #283645;
+}
+@media screen and (min-width: 690px) {
+  .functional__toolscale {
+    position: absolute;
+    margin-left: 30px;
+  }
 }
 .functional__tooltoggle {
   position: absolute;
