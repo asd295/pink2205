@@ -30,7 +30,7 @@
 				
 				background-size: 24px 26px;
 				.tool-center();
-
+ 
 			}
 	}
 
@@ -84,11 +84,22 @@
 			@media @tablet {
 				display: flex;
 				flex-direction: column;
-				margin: 30px 40px 33px 40px;
+				margin: 35px 40px 70px 10px;
 				position: relative;
 
+
+				&::before {
+					content: "";
+					position: absolute;
+					width: 280px;
+					height: 1px;
+					top: 35px;
+					left: 10px;
+					background: #dddfe0;
+					z-index: 1;
+				}
+
 			}
-			
 
 
 			&--2 {
@@ -119,7 +130,8 @@
 
 			@media @tablet {
 				position: absolute;
-				margin-left: 30px;
+				margin-left: 50px;
+				width: 220px;
 			}
 	}
 
@@ -134,18 +146,38 @@
 		background: #fff;
 		top: -6px;
 		right: 33px;
+
 			&:hover {
 				background: #d22856;
-		}
+			}
+
+			&--2 {
+
+				@media @tablet {
+					right: 160px;
+				}
+			}
+
+			&--3 {
+
+				@media @tablet {
+					right: 80px;
+				}
+			}
+
 	}
 
 
 	&__btn-upload {
-		border: none;
 		border-top: 1px solid #dddfe0;
 		display: flex;
 		justify-content: space-between;
 		flex-direction: column;
+
+
+			@media @tablet {
+				border:none;
+			}
 	}
 
 
@@ -163,6 +195,11 @@
 		line-height: 18px;
 		background: transparent;
 		cursor: pointer;
+
+
+			@media @tablet {
+				margin-right: 0px;
+			}
 	}
 
 
@@ -180,9 +217,32 @@
 		font-size: 18px;
 		line-height: 18px;
 		background: transparent;
-	}
 
+
+			@media @tablet {
+				margin-top: 25px;
+				margin-right: 0px;
+
+			}
+	}
 }
 
 
+.functional-blok {
 
+
+		@media @tablet {
+			margin-left: 60px;
+			width: 300px;
+			margin-top: 20px;
+		}
+}
+
+
+.functional-photo {
+
+
+		@media @tablet {
+			margin-top: 40px;
+		}
+}

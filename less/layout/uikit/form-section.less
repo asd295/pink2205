@@ -20,8 +20,59 @@
 		font-size: 14px;
 		line-height: 18px;
 		color: #d22856;
+
+			&--hidden {
+				display: none;
+
+					@media @tablet {
+						display: block;
+					}
+			}
+	}
+
+
+
+	&__display-1 {
+
+			@media @tablet {
+				order: 1;
+				border: 2px solid #e5e5e5;
+    margin-top: 29px;
+			}
+	}
+
+
+	&__display-2 {
+
+			@media @tablet {
+				order: 2;
+			}
+	}
+
+
+		&__display-3 {
+
+			@media @tablet {
+				order: 3;
+			}
+	}
+
+	
+
+
+	&__soft {
+
+
+			@media @tablet {
+				background-color: #fff;
+				border: 2px solid #e5e5e5;
+			}
+
 	}
 }
+
+
+
 .form-section--gray:before {
 	content: "";
 	position: absolute;
@@ -31,6 +82,12 @@
 	left: 0;
 	background: @description-bg;
 	z-index: -1;
+
+
+		@media @tablet  {
+
+			display: none;
+		}
 }
 
 

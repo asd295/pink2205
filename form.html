@@ -26,7 +26,7 @@
 		</header>
 
 		<main class="page__content">
-			<div class="section page-title-section">
+			<div class="section page-title-section page-title-section--foto">
 				<div class="section__inner">
 					<div class="page-title">
 						<h1 class="page-title__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
@@ -36,11 +36,12 @@
 			<div class="section  feedback-form-section">
 				<div class="section__inner  feedback-form-section__inner">
 					<div class="section__prolog">
-						<p class="page-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 <br> миль на вашу бонусную карту!
+						<p class="page-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+							<span class="page-form__request">Пожалуйста, заполните форму ниже:</span>
 						</p>
 					</div>
 					<form action="/echo" method="post" class="feedback-form">
-						<!-- ФИО -->
+						<div class="wrapper wrapper--flex">
 						<fieldset class="form-section">
 							<div class="textline">
 								<label class="textline__title" for="surname">Фамилия:</label>
@@ -58,10 +59,8 @@
 								<input class="textline__origin" type="text" id="second-name" name="second-name" placeholder="Ну и отчество тоже" required="">
 
 						</fieldset>
-
-
 						<!-- чекбоксы -->
-						<fieldset class="form-section  form-section--gray">
+						<fieldset class="form-section  form-section--gray form-section__display-2">
 							<legend class="form-section__title">
 								Ваши безбашенные достижения в путешествии
 							</legend>
@@ -103,21 +102,24 @@
 							</div>
 						</fieldset>
 						<!-- контакты -->
-						<fieldset class="form-section">
-							<div class="textline">
+						<fieldset class="form-section form-section__display-1">
+							<legend class="form-section__title form-section__title--hidden">
+								Контактная информация
+							</legend>
+							<div class="textline  textline__order  textline__order--margin  textline__order--icon-phone">
 								<label class="textline__title" for="phone">Номер телефона</label>
 								<span class="textline__icon"></span>
-								<input class="textline__origin" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+								<input class="textline__origin textline__origin--order" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
 							</div>
-							<div class="textline">
+							<div class="textline textline__order textline__order--margin">
 								<label class="textline__title" for="email">Адрес почты</label>
 								<span class="textline__icon"></span>
-								<input class="textline__origin" type="email" id="email" name="email" placeholder="Введите почту*" required="">
+								<input class="textline__origin textline__origin--order" type="email" id="email" name="email" placeholder="Введите почту*" required="">
 							</div>
 							
 						</fieldset>
 						<!-- радиокнопки -->
-						<fieldset class="form-section  form-section--gray">
+						<fieldset class="form-section  form-section--gray  form-section__soft">
 							<legend class="form-section__title">
 								С каким приложением путешествовали?
 							</legend> 
@@ -142,15 +144,17 @@
 							</div>
 						</fieldset>
 						<!-- текст ареа -->
-						<fieldset class="form-section">
+						<fieldset class="form-section form-section__display-3">
 							<legend class="form-section__title"> Опишите свои эмоции 
 							</legend>
 							<div class="textarea">
 								<label for="emotions"></label>
 								<textarea class="textarea__origin" rows="6" name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
 							</div>
+							<input class="btn btn--submit" type="submit" value="Отправить форму">
 						</fieldset>
-						<input class="btn btn--submit" type="submit" value="Отправить форму">
+
+					</div>
 					</form>
 
 <p class="form-comment"><span class="form-comment form-comment--red">*</span> — ОБЯЗАТЕЛЬНЫЕ <span class="form-comment form-comment--hidden">ДЛЯ ЗАПОЛНЕНИЯ</span> ПОЛЯ</p>
