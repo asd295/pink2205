@@ -714,7 +714,7 @@ th {
   }
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .page-title-section .page {
+  .page-title-section {
     background: transparent url(../img/bg-back-desktop@2x.jpg) top center no-repeat;
   }
 }
@@ -1069,12 +1069,15 @@ th {
   .form-section__display-2 {
     -ms-flex-order: 2;
         order: 2;
+    border: 2px solid #e5e5e5;
+    background-color: #fff;
   }
 }
 @media screen and (min-width: 690px) {
   .form-section__display-3 {
     -ms-flex-order: 3;
         order: 3;
+    border: 2px solid #e5e5e5;
   }
 }
 @media screen and (min-width: 690px) {
@@ -1102,6 +1105,11 @@ th {
   position: relative;
   margin-top: 18px;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 690px) {
+  .checkbox {
+    margin-left: 50px;
+  }
 }
 .checkbox__icon {
   position: absolute;
@@ -1181,8 +1189,7 @@ th {
 @media screen and (min-width: 690px) {
   .textline__title {
     padding-top: 20px;
-    padding-left: 0;
-    padding-right: 20px;
+    padding-left: 25px;
     color: #d22856;
   }
 }
@@ -1209,7 +1216,7 @@ th {
   .textline__order {
     -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     padding-bottom: 0px;
     margin-top: 70px;
   }
@@ -1230,7 +1237,7 @@ th {
   .textline__order--icon-phone:before {
     content: "";
     position: absolute;
-    top: 2px;
+    top: -44px;
     left: 438px;
     width: 60px;
     height: 58px;
@@ -1242,8 +1249,8 @@ th {
   .textline__order--icon-phone:after {
     content: "";
     position: absolute;
-    top: 131px;
-    right: 30px;
+    top: 90px;
+    right: 135px;
     width: 60px;
     height: 58px;
     background: #e5e5e5 url(../img/icon-mail.svg) no-repeat 50% 50%;
@@ -1254,6 +1261,11 @@ th {
   position: relative;
   margin-top: 42px;
   margin-bottom: 18px;
+}
+@media screen and (min-width: 690px) {
+  .radio {
+    margin-left: 50px;
+  }
 }
 .radio__icon {
   position: absolute;
@@ -1281,6 +1293,11 @@ th {
   line-height: 30px;
   letter-spacing: 0.5px;
   font-size: 17px;
+}
+@media screen and (min-width: 690px) {
+  .radio__label {
+    padding-left: 60px;
+  }
 }
 .radio__origin:checked + .radio__icon:before {
   position: absolute;
@@ -1349,6 +1366,14 @@ th {
   padding: 16px 53px;
   cursor: pointer;
   text-transform: uppercase;
+}
+@media screen and (min-width: 690px) {
+  .btn--submit {
+    -ms-flex-order: 4;
+        order: 4;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 .platform--apple {
   margin-left: 57px;
@@ -1455,6 +1480,13 @@ th {
   padding: 15px 20px 20px 20px;
   font-weight: 300;
 }
+@media screen and (min-width: 690px) {
+  .textarea__origin {
+    width: 550px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
 .form-comment {
   color: #283645;
   text-align: center;
@@ -1463,6 +1495,12 @@ th {
   margin-top: 36px;
   margin-bottom: 51px;
   text-transform: uppercase;
+}
+@media screen and (min-width: 690px) {
+  .form-comment {
+    display: inline-block;
+    margin-left: 90px;
+  }
 }
 .form-comment--red {
   color: #d22856;

@@ -1,77 +1,70 @@
 .checkbox {
-  position: relative;
-
-  margin-top: 18px;
-  margin-bottom: 50px;
-
-
-  &__icon {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 2;
-background: #ffffff;
+	position: relative;
+	margin-top: 18px;
+	margin-bottom: 50px;
 
 
+		@media @tablet {
+			margin-left: 50px;
+		}
 
 
-    display: block;
-    width: 39px;
-    height: 39px;
+		&__icon {
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 2;
+			background: #ffffff;
+			display: block;
+			width: 39px;
+			height: 39px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			border: 2px solid @slider-border;
+			border-radius: 2px;
 
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-
-    border: 2px solid @slider-border;
-    border-radius: 2px;
-
-
-    &:hover {
-      border-color: @link-bg;
-    }
-  }
-
-
-  &__origin {
-    display: none;
-  }
+				&:hover {
+					border-color: @link-bg;
+				}
+		}
 
 
-  &__label {
-    position: relative;
-    z-index: 10;
-    padding-top: 5px;
-    padding-bottom: 4px;
-    padding-left: 70px;
-    line-height: 30px;
-        color: @link-bg;
-    font-size: 18px;
-  }
+		&__origin {
+			display: none;
+		}
+
+
+		&__label {
+			position: relative;
+			z-index: 10;
+			padding-top: 5px;
+			padding-bottom: 4px;
+			padding-left: 70px;
+			line-height: 30px;
+			color: @link-bg;
+			font-size: 18px;
+		}
 }
 
 .checkbox__origin:checked + .checkbox__icon {
-  &:before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 5;
-
-    margin-left: -11px;
-    margin-top: -8px;
-
-    content: '';
-
-    display: block;
-    width: 22px;
-    height: 16px;
-    background: url(../img/icon-yes-checkbox.svg);
-  } 
- 
+	&:before {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 5;
+		margin-left: -11px;
+		margin-top: -8px;
+		content: '';
+		display: block;
+		width: 22px;
+		height: 16px;
+		background: url(../img/icon-yes-checkbox.svg);
+	}
 }
 
 
 .form-checkbox__label input[type="checkbox"]:active:checked + .form-checkbox__icon:active {
-  border: 2px solid #d22856;
+	border: 2px solid #d22856;
 }
 

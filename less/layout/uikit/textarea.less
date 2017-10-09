@@ -3,17 +3,24 @@
 	display: flex;
 	justify-content: center;
 
-	&__origin {
-		width: 280px;
-    height: 200px;
-    box-sizing: border-box;
-    border: 2px solid @slider-border;
-    color: @link-bg;
-    font-size: 19px;
-    line-height: 30px;
-    padding: 15px 20px 20px 20px;
-    font-weight: 300;
+
+		&__origin {
+			width: 280px;
+			height: 200px;
+			box-sizing: border-box;
+			border: 2px solid @slider-border;
+			color: @link-bg;
+			font-size: 19px;
+			line-height: 30px;
+			padding: 15px 20px 20px 20px;
+			font-weight: 300;
+
+				@media @tablet {
+					width: 550px;
+					margin-top: 20px;
+					margin-bottom: 40px;
+		}
 
 	}
 
-	} 
+}
