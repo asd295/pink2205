@@ -55,9 +55,9 @@
 				<div class="section__inner">
 					<section class="features">
 						<div class="features__title">
-							<div class="wrapper">
+							<div class="wrapper--heading">
 								<h1 class="features__heading">Устали от серости мегаполиса?</h1>
-								<h1 class="features__heading text-padding">Нам есть, что вам предложить!</h1>
+								<h1 class="features__heading features__heading--text-padding">Нам есть, что вам предложить!</h1>
 							</div>
 						</div>
 					</section>
@@ -68,27 +68,39 @@
 					<section class="features-items">
 						<div class="features-items__wrapper">
 							<div class="features-item">
-								<h2 class="features-item__title">Поднимает настроение</h2>
-								<p class="features-item__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
-							</div>
-							<div class="features-item">
-								<h2 class="features-item__title">Меняет мир вокруг</h2>
-								<p class="features-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-							</div>
-							<div class="features-item">
-								<h2 class="features-item__title">Заводит новых друзей</h2>
-								<p class="features-item__text">Ставьте лайки,комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+								<div class="features-item__reception">
+									<h2 class="features-item__title">Поднимает настроение</h2>
+									<p class="features-item__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+								</div>
 								<picture>
+									<img class="features-item__picture-1" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="">
+								</picture>
+							</div>
+							<div class="features-item">
+								<div class="features-item__reception">
+									<h2 class="features-item__title">Меняет мир вокруг</h2>
+									<p class="features-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+								</div>
+								<picture>
+									<img class="features-item__picture-2" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="">
+								</picture>
+							</div>
+							<div class="features-item">
+								<div class="features-item__reception">
+									<h2 class="features-item__title">Заводит новых друзей</h2>
+									<p class="features-item__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+								</div>
+								<picture>
+									<source media="(min-width: 990px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
 									<source media="(min-width: 690px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
-
-									<img class="features-item__picture" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="">
+									<img class="features-item__picture-3" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="">
 								</picture>
 							</div>
 						</div>
 					</section>
 				</div>
 			</div>
-			<div class="section">
+			<div class="section section__grey-desktop">
 				<div class="section__inner">
 					<section class="research">
 						<div class="research__image">
@@ -105,21 +117,23 @@
 				<div class="section__inner">
 					<section class="reviews">
 						<div class="reviews__wrapper slider">
-						<ul class="reviews__items">
-						<li class="reviews__item  reviews__item--fast  slider__item">
-						<h2 class="areviews__item-title review__item-title--order2">Николай Петров</h2>
-							<p class="review__profession review__profession--order3">25 лет, водитель трамвая</p>
-							<p class="areviews__item-text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные cерые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
-						</li>
-						<li class="reviews__item  reviews__item--fast  slider__item">
-							<h2 class="reviews__item-title">Николай Иванов</h2>
-							<p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные cерые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-						</li>
-						<li class="reviews__item  reviews__item--fast  slider__item">
-						<h2 class="reviews__item-title">Николай Иванов</h2>
-						<p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные cерые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-						</li>
-						</ul>
+							<img class="reviews__quotes" src="img/icon-quotes.svg" width="79" height="63" alt="">
+							<a class="reviews__arrow" href="#"></a>
+							<ul class="reviews__items">
+								<li class="reviews__item  reviews__item--fast  slider__item">
+									<h2 class="areviews__item-title review__item-title--order2">Николай Петров</h2>
+									<p class="review__profession review__profession--order3">25 лет, водитель трамвая</p>
+									<p class="areviews__item-text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные cерые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
+								</li>
+								<li class="reviews__item  reviews__item--fast  slider__item">
+									<h2 class="reviews__item-title">Николай Иванов</h2>
+									<p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные cерые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+								</li>
+								<li class="reviews__item  reviews__item--fast  slider__item">
+									<h2 class="reviews__item-title">Николай Иванов</h2>
+									<p>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные cерые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+								</li>
+							</ul>
 						<div class="sliders__inputs">
 							<input class="slider__input" type="radio" name="advantages" id="btn-carousel-1" checked>
 							<input class="slider__input" type="radio" name="advantages" id="btn-carousel-2">
