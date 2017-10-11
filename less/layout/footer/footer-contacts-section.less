@@ -1,0 +1,24 @@
+.footer-contacts-section {
+	position: relative;
+
+
+		&--gradient {
+			&::before {
+				content: "";
+				position: absolute;
+				display: block;
+				width: 100%;
+				height: 30px;
+				background: url(../img/bg-triangle-white-footer.svg) no-repeat top center;
+				background-size: 100% 100%;
+				z-index: 1;
+				top: 402px;
+
+
+					@media @tablet {
+						height: 120px;
+					}
+			}
+		}
+}
+
