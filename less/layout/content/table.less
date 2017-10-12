@@ -11,27 +11,26 @@
 
 	&__col-head {
 		display: table-cell;
-    width: 276px;
-    height: 96px;
-    background: @link-bg;
-    color: #ffffff;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-    font-weight: 300;
-    border-left: 2px solid #e6e6e6;
-    border-right: 2px solid #e6e6e6;
-    padding-left: 70px;
-    padding-right: 70px;
+		width: 276px;
+		height: 96px;
+		background: @link-bg;
+		color: #ffffff;
+		font-size: 24px;
+		line-height: 30px;
+		text-align: center;
+		font-weight: 300;
+		border-left: 2px solid #e6e6e6;
+		border-right: 2px solid #e6e6e6;
+		padding-left: 70px;
+		padding-right: 70px;
 	}
 
 
 	&__text {
 		font-family: @font-regular, sans-serif;
-    font-weight: @bold;
-    font-size: 18px;
-    line-height: 30px;
-
+		font-weight: @bold;
+		font-size: 18px;
+		line-height: 30px;
 	}
 
 
@@ -42,49 +41,51 @@
 
 	&__price {
 		border-collapse: collapse;
-    position: relative;
-    width: auto;
-    height: auto;
+		position: relative;
+		width: auto;
+		height: auto;
 	}
 
 	&__price::before {
 		content: "";
-    width: 74px;
-    height: 73px;
-    position: absolute;
-    z-index: 1;
-    background: url(../img/bg-hit.svg) no-repeat;
-    top: 0;
-    right: 485px;
+		width: 74px;
+		height: 73px;
+		position: absolute;
+		z-index: 1;
+		background: url(../img/bg-hit.svg) no-repeat;
+		top: 0;
+		right: 485px;
 	}
 
 
 	&__price::after {
 		content: "ХИТ";
-    top: 5px;
-    right: 508px;
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 30px;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    z-index: 1;
-    background: transparent;
-    transform: rotate(-45deg);
+		top: 5px;
+		right: 508px;
+		color: #ffffff;
+		font-size: 14px;
+		line-height: 30px;
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		z-index: 1;
+		background: transparent;
+		transform: rotate(-45deg);
 
+
+			@media @desktop {
+				right: 350px;
+			}
 	}
 
 
 	&__mobile-data {
 		display: block;
-    width: 135px;
-    padding-left: 22px;
-    padding-right: 121px;
-}
+		width: 135px;
+		padding-left: 22px;
+		padding-right: 121px;
+		}
 	}
-
-
 
 
 .table__price--second-item {
@@ -94,16 +95,15 @@
 
 .table__col {
 		width: 276px;
-	height: 57px;
-	margin: 0;
-	padding: 0;
-	border: 2px solid #e6e6e6;
-	background: #ffffff;
-	font-size: 14px;
-	line-height: 30px;
-	color: #283645;
-	text-transform: uppercase;
-	
+		height: 57px;
+		margin: 0;
+		padding: 0;
+		border: 2px solid #e6e6e6;
+		background: #ffffff;
+		font-size: 14px;
+		line-height: 30px;
+		color: #283645;
+		text-transform: uppercase;
 
 
 		&--col-2,
@@ -117,18 +117,12 @@
 		}
 
 
-
-
 		&--col-6,
 		&--col-10,
 		&--col-11 {
 			background: #ffffff url(../img/icon-no.svg) no-repeat 231px 19px;
 			border-top: none;
 		}
-
-
-
-
 }
 
 
@@ -151,17 +145,17 @@
 	}
 
 	.table__col-head {
-    display: table-cell;
-    width: 152px;
-    height: 78px;
-    background: #283645;
-    color: #ffffff;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    font-weight: 300;
-    padding-left: 15px;
-    padding-right: 15px;
+		display: table-cell;
+		width: 152px;
+		height: 78px;
+		background: #283645;
+		color: #ffffff;
+		font-size: 18px;
+		line-height: 30px;
+		text-align: center;
+		font-weight: 300;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 	.table__mobile-data {
@@ -175,7 +169,7 @@
 
 	.table__price::before {
 		right: 265px;
-    background-size: 61px 61px;
+		background-size: 61px 61px;
 }
 
 
@@ -183,34 +177,73 @@
 		padding-left: 15px;
 		text-transform: none;
 		height: 47px;
+
+
 				&--col-2,
-		&--col-3,
-		&--col-4,
-		&--col-7,
-		&--col-8,
-		&--col-12 {
-			background: #ffffff url(../img/icon-yes.svg) no-repeat 65px 13px;
-			border-top: none;
-		}
+				&--col-3,
+				&--col-4,
+				&--col-7,
+				&--col-8,
+				&--col-12 {
+					background: #ffffff url(../img/icon-yes.svg) no-repeat 65px 13px;
+					border-top: none;
+				}
 
-		&--col-6,
-		&--col-10,
-		&--col-11 {
-			background: #ffffff url(../img/icon-no.svg) no-repeat 64px 11px;
-			border-top: none;
-		}
+
+				&--col-6,
+				&--col-10,
+				&--col-11 {
+					background: #ffffff url(../img/icon-no.svg) no-repeat 64px 11px;
+					border-top: none;
+				}
 	}
-
-
 }
+
 
 @media @desktop {
 
 	.table {
 		padding-left: 70px;
 		padding-right: 70px;
-		padding-top: 60px;
-	}
-}
+		padding-top: 10px;
+		padding-bottom: 80px;
 
+
+			&__col {
+				&--col-2,
+				&--col-3,
+				&--col-4,
+				&--col-7,
+				&--col-8,
+				&--col-12 {
+				background: #ffffff url(../img/icon-yes.svg) no-repeat 80px 13px;
+				border-top: none;
+				}
+
+
+				&--col-6,
+				&--col-10,
+				&--col-11 {
+					background: #ffffff url(../img/icon-no.svg) no-repeat 80px 11px;
+					border-top: none;
+				}
+			}
+
+
+			&__price::before {
+				right: 340px;
+			}
+
+
+			&__price::after {
+				right: 368px;
+			}
+	}
+
+
+.table__col {
+	font-size: 18px;
+	line-height: 30px;
+}
+}
 
