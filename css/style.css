@@ -789,47 +789,6 @@ th {
     margin-bottom: -5px;
   }
 }
-.page-title-section {
-  background: transparent url(../img/bg-back-mobile@1x.jpg) center -65px no-repeat;
-}
-@media screen and (min-width: 660px) {
-  .page-title-section {
-    background: transparent url(../img/bg-back-tablet@1x.jpg) center -65px no-repeat;
-    background-size: 1200px 729px;
-  }
-}
-@media screen and (min-width: 960px) {
-  .page-title-section {
-    background: transparent url(../img/bg-back-desktop@1x.jpg);
-    background-position: center;
-  }
-}
-@media screen and (min-width: 660px) {
-  .page-title-section--foto {
-    background: transparent url(../img/bg-back-tablet@1x.jpg);
-    background-size: 1200px 729px;
-    background-position: center bottom -290px;
-    height: 320px;
-  }
-}
-@media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 1.5dppx) {
-  .page-title-section {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 700px 466px;
-  }
-}
-@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
-  .page-title-section {
-    background-image: url("../img/bg-back-tablet@2x.jpg");
-    background-size: 1200px 729px;
-  }
-}
-@media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
-  .page-title-section {
-    background-image: url("../img/bg-back-desktop@2x.jpg");
-    background-size: 2560px 865px;
-  }
-}
 .page-prolog-section {
   padding-top: 35px;
   padding-bottom: 35px;
@@ -1173,6 +1132,52 @@ th {
     line-height: 30px;
   }
 }
+.page-title-section {
+  background: transparent url(../img/bg-back-mobile@1x.jpg) center -65px no-repeat;
+}
+@media screen and (min-width: 660px) {
+  .page-title-section {
+    background: transparent url(../img/bg-back-tablet@1x.jpg) center -65px no-repeat;
+    background-size: 1200px 729px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .page-title-section {
+    background: transparent url(../img/bg-back-desktop@1x.jpg);
+    background-position: center;
+  }
+}
+@media screen and (min-width: 660px) {
+  .page-title-section--foto {
+    background-size: 1200px 729px;
+    background-position: center bottom -290px;
+    height: 320px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .page-title-section--foto {
+    background-position: center bottom -475px;
+    height: 350px;
+  }
+}
+@media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 1.5dppx) {
+  .page-title-section {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 700px 466px;
+  }
+}
+@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+  .page-title-section {
+    background-image: url("../img/bg-back-tablet@2x.jpg");
+    background-size: 1200px 729px;
+  }
+}
+@media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
+  .page-title-section {
+    background-image: url("../img/bg-back-desktop@2x.jpg");
+    background-size: 2560px 865px;
+  }
+}
 /* uikit */
 @media screen and (min-width: 660px) {
   .likes__popular {
@@ -1186,9 +1191,13 @@ th {
     margin-left: 460px;
     padding: 0;
     line-height: 22px;
-    -ms-flex-order: 2;
-        order: 2;
     max-width: 200px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .likes__popular {
+    margin-left: 760px;
+    margin-top: -75px;
   }
 }
 .likes__button {
@@ -1830,6 +1839,11 @@ th {
     width: 660px;
   }
 }
+@media screen and (min-width: 960px) {
+  .photo-item__description-popular {
+    width: 960px;
+  }
+}
 .photo-item__text-popular {
   margin: -2px 0 7px;
 }
@@ -1837,6 +1851,12 @@ th {
   .photo-item__text-popular {
     width: 590px;
     margin: -2px 0 7px 10px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .photo-item__text-popular {
+    width: auto;
+    margin-top: 10px;
   }
 }
 .photo-item--top::before {
@@ -2157,6 +2177,13 @@ th {
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
+  }
+}
+@media screen and (min-width: 960px) {
+  .prolog-photo {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 30px;
   }
 }
 /*index*/

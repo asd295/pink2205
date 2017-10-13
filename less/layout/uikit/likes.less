@@ -4,16 +4,22 @@
 		&__popular {
 
 
-				@media @tablet {
-					display: flex;
-					flex-direction: row-reverse;
-					justify-content: space-between;
-					margin-top: -80px;
+			@media @tablet {
+				display: flex;
+				flex-direction: row-reverse;
+				justify-content: space-between;
+				margin-top: -80px;
 					margin-left: 460px;
 					padding: 0;
 					line-height: 22px;
-					order: 2;
 					max-width: 200px;
+				}
+
+
+				@media @desktop {
+					margin-left: 760px;
+					margin-top: -75px;
+
 				}
 		}
 
