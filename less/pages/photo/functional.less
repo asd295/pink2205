@@ -27,10 +27,14 @@
 
 			@media @tablet {
 				margin: 0;
-				
 				background-size: 24px 26px;
 				.tool-center();
- 
+			}
+
+
+			@media @desktop {
+				background-size: 48px 48px;
+				margin-top: -20px;
 			}
 	}
 
@@ -50,6 +54,12 @@
 				margin-top: 27px;
 				background-size: 24px 26px;
 				.tool-center();
+			}
+
+
+			@media @desktop {
+				background-size: 48px 48px;
+				margin-top: -20px;
 			}
 	}
 
@@ -73,6 +83,14 @@
 				width: 17px;
 				height: 17px;
 				.tool-center();
+			}
+
+
+			@media @desktop {
+				background-size: 48px 48px;
+				margin-top: -20px;
+				width: 48px;
+				height: 48px;
 			}
 	}
 
@@ -99,6 +117,15 @@
 					z-index: 1;
 				}
 
+			}
+
+
+			@media @desktop {
+				margin-bottom: 75px;
+
+				&::before {
+					width: 460px;
+				}
 			}
 
 
@@ -130,8 +157,14 @@
 
 			@media @tablet {
 				position: absolute;
-				margin-left: 50px;
+				margin-left: 95px;
 				width: 220px;
+			}
+
+
+			@media @desktop {
+				margin-left: 80px;
+				width: 350px;
 			}
 	}
 
@@ -151,10 +184,23 @@
 				background: #d22856;
 			}
 
+			&--1 {
+				@media @desktop {
+					right: 65px;
+				}
+
+
+			}
+
 			&--2 {
 
 				@media @tablet {
 					right: 160px;
+				}
+
+
+				@media @desktop {
+					right: -150px;
 				}
 			}
 
@@ -163,8 +209,12 @@
 				@media @tablet {
 					right: 80px;
 				}
-			}
 
+
+				@media @desktop {
+					right: -50px;
+				}
+			}
 	}
 
 
@@ -177,6 +227,13 @@
 
 			@media @tablet {
 				border:none;
+			}
+
+
+			@media @desktop {
+				flex-direction: row;
+				width: 420px;
+				margin-left: 10px;
 			}
 	}
 
@@ -200,6 +257,14 @@
 			@media @tablet {
 				margin-right: 0px;
 			}
+
+
+			@media @desktop {
+				padding-left: 36px;
+				padding-right: 36px;
+
+			}
+
 	}
 
 
@@ -222,7 +287,13 @@
 			@media @tablet {
 				margin-top: 25px;
 				margin-right: 0px;
+			}
 
+
+			@media @desktop {
+				padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 38px;
 			}
 	}
 }
@@ -236,8 +307,13 @@
 			width: 300px;
 			margin-top: 20px;
 		}
-}
 
+
+		@media @desktop {
+			margin-left: 90px;
+		}
+
+}
 
 .functional-photo {
 

@@ -1197,7 +1197,7 @@ th {
 @media screen and (min-width: 960px) {
   .likes__popular {
     margin-left: 760px;
-    margin-top: -75px;
+    margin-top: -60px;
   }
 }
 .likes__button {
@@ -1952,6 +1952,11 @@ th {
     margin-bottom: 25px;
   }
 }
+@media screen and (min-width: 960px) {
+  .photo-upload__inner {
+    margin-left: 80px;
+  }
+}
 .functional__tool-list {
   display: -ms-flexbox;
   display: flex;
@@ -1983,6 +1988,12 @@ th {
     margin-top: -10px;
   }
 }
+@media screen and (min-width: 960px) {
+  .functional__tool1 {
+    background-size: 48px 48px;
+    margin-top: -20px;
+  }
+}
 .functional__tool2 {
   background: url(../img/icon-editor-fill-disabled.svg) no-repeat;
   border: none;
@@ -1999,6 +2010,12 @@ th {
     background-size: 24px 26px;
     position: absolute;
     margin-top: -10px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .functional__tool2 {
+    background-size: 48px 48px;
+    margin-top: -20px;
   }
 }
 .functional__tool3 {
@@ -2025,6 +2042,14 @@ th {
     margin-top: -10px;
   }
 }
+@media screen and (min-width: 960px) {
+  .functional__tool3 {
+    background-size: 48px 48px;
+    margin-top: -20px;
+    width: 48px;
+    height: 48px;
+  }
+}
 .functional__toolcontrols {
   display: none;
 }
@@ -2046,6 +2071,14 @@ th {
     left: 10px;
     background: #dddfe0;
     z-index: 1;
+  }
+}
+@media screen and (min-width: 960px) {
+  .functional__toolcontrols {
+    margin-bottom: 75px;
+  }
+  .functional__toolcontrols::before {
+    width: 460px;
   }
 }
 .functional__toolcontrols--2 {
@@ -2074,8 +2107,14 @@ th {
 @media screen and (min-width: 660px) {
   .functional__toolscale {
     position: absolute;
-    margin-left: 50px;
+    margin-left: 95px;
     width: 220px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .functional__toolscale {
+    margin-left: 80px;
+    width: 350px;
   }
 }
 .functional__tooltoggle {
@@ -2092,14 +2131,29 @@ th {
 .functional__tooltoggle:hover {
   background: #d22856;
 }
+@media screen and (min-width: 960px) {
+  .functional__tooltoggle--1 {
+    right: 65px;
+  }
+}
 @media screen and (min-width: 660px) {
   .functional__tooltoggle--2 {
     right: 160px;
   }
 }
+@media screen and (min-width: 960px) {
+  .functional__tooltoggle--2 {
+    right: -150px;
+  }
+}
 @media screen and (min-width: 660px) {
   .functional__tooltoggle--3 {
     right: 80px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .functional__tooltoggle--3 {
+    right: -50px;
   }
 }
 .functional__btn-upload {
@@ -2114,6 +2168,14 @@ th {
 @media screen and (min-width: 660px) {
   .functional__btn-upload {
     border: none;
+  }
+}
+@media screen and (min-width: 960px) {
+  .functional__btn-upload {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    width: 420px;
+    margin-left: 10px;
   }
 }
 .functional__post-btn {
@@ -2134,6 +2196,12 @@ th {
 @media screen and (min-width: 660px) {
   .functional__post-btn {
     margin-right: 0px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .functional__post-btn {
+    padding-left: 36px;
+    padding-right: 36px;
   }
 }
 .functional__cencel-btn {
@@ -2157,11 +2225,23 @@ th {
     margin-right: 0px;
   }
 }
+@media screen and (min-width: 960px) {
+  .functional__cencel-btn {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 38px;
+  }
+}
 @media screen and (min-width: 660px) {
   .functional-blok {
     margin-left: 60px;
     width: 300px;
     margin-top: 20px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .functional-blok {
+    margin-left: 90px;
   }
 }
 @media screen and (min-width: 660px) {
@@ -2183,7 +2263,8 @@ th {
   .prolog-photo {
     padding-left: 0px;
     padding-right: 0px;
-    padding-top: 30px;
+    padding-top: 0;
+    margin-bottom: 25px;
   }
 }
 /*index*/
