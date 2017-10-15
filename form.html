@@ -15,9 +15,9 @@
 					<nav class="main-nav">
 						<div class="main-nav__burger  main-nav__burger--cross"></div>
 						<ul class="main-nav__list">
-							<li class="main-nav__item"><a class="main-nav__link  main-nav__link--active" href="index.html">Главная</a></li>
+							<li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
 							<li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-							<li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+							<li class="main-nav__item"><a class="main-nav__link  main-nav__link--active" href="form.html">Конкурс</a></li>
 							<li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
 						</ul>
 					</nav>
@@ -29,7 +29,7 @@
 			<div class="section page-title-section page-title-section--foto">
 				<div class="section__inner">
 					<div class="page-title">
-						<h1 class="page-title__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
+						<h1 class="page-title__heading page-title__heading--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
 					</div>
 				</div>
 			</div>
@@ -42,7 +42,7 @@
 					</div>
 					<form action="/echo" method="post" class="feedback-form">
 						<div class="wrapper wrapper--flex">
-						<fieldset class="form-section">
+						<fieldset class="form-section form-section__display-desktop">
 							<div class="textline">
 								<label class="textline__title" for="surname">Фамилия:</label>
 								<span class="textline__icon"></span>
@@ -64,41 +64,43 @@
 							<legend class="form-section__title">
 								Ваши безбашенные достижения в путешествии
 							</legend>
-							<div class="checkbox">
+							<div class="form-section-advance">
+							<div class="checkbox  checkbox__advance">
 								<label class="checkbox__label" for="shark">Сделал селфи с акулой
 									<input class="checkbox__origin" type="checkbox" name="shark" id="shark" checked>
 									<span class="checkbox__icon"></span>
 								</label>
 							</div>
-							<div class="checkbox">
+							<div class="checkbox  checkbox__advance">
 								<label class="checkbox__label" for="beach">Обгорел на пляже
 									<input class="checkbox__origin" type="checkbox" name="beach" id="beach" checked>
 									<span class="checkbox__icon"></span>
 								</label>
 							</div>
-							<div class="checkbox">
+							<div class="checkbox checkbox__advance">
 								<label class="checkbox__label" for="norris">Видел Чака Норриса
 									<input class="checkbox__origin" type="checkbox" name="norris" id="norris" checked>
 									<span class="checkbox__icon"></span>
 								</label>
 							</div>
-							<div class="checkbox">
+							<div class="checkbox  checkbox__advance">
 								<label class="checkbox__label" for="souvenir">Накупил сувениров
 									<input class="checkbox__origin" type="checkbox" name="souvenir" id="souvenir" checked>
 									<span class="checkbox__icon"></span>
 								</label>
 							</div>
-							<div class="checkbox">
+							<div class="checkbox  checkbox__advance">
 								<label class="checkbox__label" for="tower">Удержал башню
 									<input class="checkbox__origin" type="checkbox" name="tower" id="tower" checked>
 									<span class="checkbox__icon"></span>
 								</label>
 							</div>
-							<div class="checkbox">
+							<div class="checkbox  checkbox__advance">
 								<label class="checkbox__label" for="hotel">Разгромил отель
 									<input class="checkbox__origin" type="checkbox" name="hotel" id="hotel" checked>
 									<span class="checkbox__icon"></span>
 								</label>
+							</div>
 							</div>
 						</fieldset>
 						<!-- контакты -->
@@ -106,6 +108,7 @@
 							<legend class="form-section__title form-section__title--hidden">
 								Контактная информация
 							</legend>
+							<div class="form-section-contakt">
 							<div class="textline  textline__order  textline__order--margin  textline__order--icon-phone">
 								<label class="textline__title" for="phone">Номер телефона</label>
 								<span class="textline__icon"></span>
@@ -116,7 +119,7 @@
 								<span class="textline__icon"></span>
 								<input class="textline__origin textline__origin--order" type="email" id="email" name="email" placeholder="Введите почту*" required="">
 							</div>
-							
+							</div>
 						</fieldset>
 						<!-- радиокнопки -->
 						<fieldset class="form-section  form-section--gray  form-section__soft">

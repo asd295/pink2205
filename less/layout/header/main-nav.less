@@ -115,9 +115,34 @@
 
 		&__link {
 			display: inline-block;
-
 			text-transform: none;
 			font-weight: 300;
+
+				&:hover {
+					color: #d22856;
+				}
+
+				&:focus {
+				color:#fff;
+				opacity: 0.3;
+				}
+
+
+			&--active {
+				border-bottom: 1px solid #ffffff;
+
+				
+			}
 		}
 	}
 }
+
+
+
+
+.main-nav__link--active:hover {
+	 @media @desktop {
+    border-bottom: 1px solid;
+  }
+}
+

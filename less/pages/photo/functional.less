@@ -157,8 +157,8 @@
 
 			@media @tablet {
 				position: absolute;
-				margin-left: 95px;
-				width: 220px;
+				margin-left: 65px;
+				width: 195px;
 			}
 
 
@@ -253,6 +253,17 @@
 		background: transparent;
 		cursor: pointer;
 
+			&:hover {
+				 background: @font-red;
+				color: white;
+			}
+
+			&:active {
+				background: @font-red;
+				color: #e06989;
+
+			}
+
 
 			@media @tablet {
 				margin-right: 0px;
@@ -283,6 +294,17 @@
 		line-height: 18px;
 		background: transparent;
 
+			&:hover {
+				color: #b5b9be;
+				border: 3px solid #b5b9be;
+			}
+
+			&:active {
+				color: #cbced2;
+				background: #b5b9be;
+				border: 3px solid #b5b9be;
+			}
+
 
 			@media @tablet {
 				margin-top: 25px;
@@ -292,8 +314,8 @@
 
 			@media @desktop {
 				padding-left: 50px;
-    padding-right: 50px;
-    margin-top: 38px;
+				padding-right: 50px;
+				margin-top: 38px;
 			}
 	}
 }

@@ -4,24 +4,30 @@
 	&--flex {
 
 		@media @tablet {
-
 			display: flex;
 			justify-content: space-between;
 			flex-direction: column;
+		}
+
+
+
+		@media @desktop {
+			flex-wrap: wrap;
+			flex-direction: row;
+
 		}
 
 	}
 
 
 	&--heading {
+		margin-bottom: 20px;
 
 		@media @desktop {
 
 			margin-top: 60px;
 			font-size: 50px;
 			line-height: 60px;
-
-
 		}
 	}
 }

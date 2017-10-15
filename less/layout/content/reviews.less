@@ -51,6 +51,8 @@
 				z-index: 1;
 				background: url(../img/icon-review-arrow-left.svg) no-repeat;
 			}
+
+
 			&::after {
 				content: "";
 				position: absolute;
@@ -62,6 +64,31 @@
 				background: url(../img/icon-review-arrow-right.svg) no-repeat;
 			}
 		}
+	}
+}
+
+
+.reviews__arrow:hover::before {
+	@media @desktop {
+		background: url(../img/icon-review-arrow-left-hover.svg) no-repeat;
+		}
+}
+
+.reviews__arrow:active::before {
+	@media @desktop {
+		background: url(../img/icon-review-arrow-left-active.svg) no-repeat;
+	}
+}
+
+.reviews__arrow:hover::after {
+	@media @desktop {
+		background: url(../img/icon-review-arrow-right-hover.svg) no-repeat;
+	}
+}
+
+.reviews__arrow:active::after {
+	@media @desktop {
+		background: url(../img/icon-review-arrow-right-active.svg) no-repeat;
 	}
 }
 

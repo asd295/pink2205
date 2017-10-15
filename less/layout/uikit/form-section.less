@@ -31,13 +31,30 @@
 	}
 
 
+	&__display-desktop {
+		
+
+		@media @desktop {
+			width: 480px;
+			margin-top: 50px;
+		}
+	}
+
+
 
 	&__display-1 {
 
 			@media @tablet {
 				order: 1;
 				border: 2px solid #e5e5e5;
-    margin-top: 29px;
+				margin-top: 29px;
+			}
+
+
+			@media @desktop {
+				width: 960px;
+				margin-top: 0px;
+				margin-bottom: 30px;
 			}
 	}
 
@@ -58,9 +75,13 @@
 				order: 3;
 				border: 2px solid #e5e5e5;
 			}
+
+
+			@media @desktop {
+				width: 100%;
+			}
 	}
 
-	
 
 
 	&__soft {
@@ -71,9 +92,13 @@
 				border: 2px solid #e5e5e5;
 			}
 
+
+			@media @desktop {
+				height: 300px;
+			}
+
 	}
 }
-
 
 
 .form-section--gray:before {
@@ -92,5 +117,16 @@
 			display: none;
 		}
 }
+
+
+
+
+
+
+
+
+
+
+
 
 

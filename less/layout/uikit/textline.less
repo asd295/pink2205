@@ -58,11 +58,24 @@
 			color: @link-bg;
 			outline: none;
 
+				&:hover {
+					border-color: #283645;
+				}
+
+				&:focus {
+					border-color: #d22856;
+				}
+
 
 				&--order {
 
 					@media @tablet {
 						width: 500px;
+					}
+
+
+					@media @desktop {
+						width: 315px;
 					}
 
 
@@ -113,6 +126,11 @@
 			background: #e5e5e5 url(../img/icon-phone.svg) no-repeat 50% 50%;
 			z-index: 1;
 		}
+
+
+		@media @desktop {
+			left: 300px;
+		}
 }
 
 
@@ -123,10 +141,17 @@
 			content: "";
 			position: absolute;
 			top: 90px;
+			left: 438px;
 			right: 135px;
 			width: 60px;
 			height: 58px;
 			background: #e5e5e5 url(../img/icon-mail.svg) no-repeat 50% 50%;
 			z-index: 1;
+		}
+
+
+		@media @desktop {
+			top: -44px;
+			left: 770px;
 		}
 }
