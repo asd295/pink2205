@@ -475,7 +475,6 @@ th {
   .section__darkblue {
     top: 210px;
     padding-bottom: 100px;
-    width: 960px;
   }
 }
 /* header*/
@@ -884,7 +883,7 @@ th {
   .page-title--index {
     background: url(../img/iphone-hand-desktop@1x.png) center center no-repeat;
     margin-top: 150px;
-    margin-right: 95px;
+    margin-right: 45px;
     margin-bottom: -5px;
   }
 }
@@ -2200,6 +2199,12 @@ th {
   background: #f2f2f2;
   padding: 20px 0 30px 0;
   margin: 0 auto;
+}
+@media screen and (min-width: 960px) {
+  .photo-upload {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
 }
 .photo-upload__inner {
   -ms-flex-align: center;
