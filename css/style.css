@@ -1261,7 +1261,7 @@ th {
 }
 @media screen and (min-width: 960px) {
   .page-title-section {
-    background: transparent url(../img/bg-back-desktop@1x.jpg);
+    background: transparent url(../img/bg-back-desktop@1x.jpg) no-repeat;
     background-position: center;
   }
 }
@@ -1611,7 +1611,7 @@ th {
         flex-direction: column-reverse;
     margin-bottom: 20px;
     padding-bottom: 0px;
-    margin-top: 70px;
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 660px) {
@@ -1630,7 +1630,7 @@ th {
   .textline__order--icon-phone:before {
     content: "";
     position: absolute;
-    top: -44px;
+    top: -1px;
     left: 438px;
     width: 60px;
     height: 58px;
@@ -1647,7 +1647,7 @@ th {
   .textline__order--icon-phone:after {
     content: "";
     position: absolute;
-    top: 90px;
+    top: 125px;
     left: 438px;
     right: 135px;
     width: 60px;
@@ -1658,7 +1658,7 @@ th {
 }
 @media screen and (min-width: 960px) {
   .textline__order--icon-phone:after {
-    top: -44px;
+    top: -1px;
     left: 770px;
   }
 }
