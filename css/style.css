@@ -1417,6 +1417,11 @@ th {
     background-color: #fff;
   }
 }
+@media screen and (min-width: 960px) {
+  .form-section__display-2 {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 660px) {
   .form-section__display-3 {
     -ms-flex-order: 3;
@@ -1536,7 +1541,6 @@ th {
 .textline {
   position: relative;
   width: 280px;
-  height: 63px;
   margin-bottom: 38px;
   padding-bottom: 15px;
   margin-left: 10px;
@@ -1790,8 +1794,7 @@ th {
   .btn--submit {
     -ms-flex-order: 4;
         order: 4;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: inline-block;
   }
 }
 .platform--apple {
