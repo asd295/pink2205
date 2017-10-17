@@ -2198,15 +2198,6 @@ th {
   text-transform: uppercase;
   font-weight: 300;
 }
-.photo-header {
-  display: -ms-flexbox;
-  display: flex;
-}
-@media screen and (min-width: 660px) {
-  .photo-header {
-    margin-left: 10px;
-  }
-}
 .photo-day-section {
   background-color: #fff;
 }
@@ -2576,6 +2567,15 @@ th {
     padding-right: 0px;
     padding-top: 0;
     margin-bottom: 25px;
+  }
+}
+.photo-header {
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 660px) {
+  .photo-header {
+    margin-left: 10px;
   }
 }
 /*index*/
